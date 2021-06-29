@@ -1,0 +1,98 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: solid 1px;
+}
+body {
+  width: 3000px;
+}
+.car {
+  position: relative;
+  display: inline-block;
+  left: -3000px;
+  width: 280px;
+  height: 250px;
+  border: transparent;
+  animation-name: rrun;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+.shell {
+  position: absolute;
+  border-color: blue;
+  width: 250px;
+  height: 150px;
+  border-radius: 1%;
+  transform: translate(5%, 10%);
+}
+.wheel {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate(10%, 148%);
+  border: transparent;
+}
+.wheel2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translatex(150%);
+  border: transparent;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: rrrotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+.hr_line {
+  height: 50%;
+  border-color: transparent transparent black transparent;
+}
+.vrt_line {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  height: 100%;
+  border-left: transparent;
+}
+.slash {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid red;
+  border-color: transparent transparent black transparent;
+  transform-origin: bottom center;
+  transform: rotateZ(45deg);
+}
+.slash2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid red;
+  border-color: transparent transparent black transparent;
+  transform-origin: bottom center;
+  transform: rotateZ(-45deg);
+}
+
+@keyframes rrun {
+  100% {
+    transform: translatex(2000%);
+  }
+}
+@keyframes rrrotate {
+  100% {
+    transform: rotate(800deg);
+  }
+}
